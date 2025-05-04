@@ -1,0 +1,20 @@
+.error {
+	color: red;
+	font-size: 14px; 
+}
+
+@media screen and (max-width: 425px) {
+	#cadastroAlerta {
+		display: grid;
+		grid-template-areas: "descricaoAlerta"
+							 "valorAlerta";
+	}
+	
+	#descricaoAlerta {
+		grid-area: descricaoAlerta;
+	}
+	
+	#valorAlerta {
+		grid-area: valorAlerta;
+	}
+}

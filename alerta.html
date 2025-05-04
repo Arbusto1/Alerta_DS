@@ -1,0 +1,67 @@
+<html>
+
+<head>
+	<title>Menu</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+    <div class="bg-dark ps-3 d-flex flex-row">
+		<a class="p-2 text-light text-decoration-none fw-bold " href="#">Alerta</a>
+        <a class="p-2 text-light text-decoration-none" href="minhascompras.html">Minhas compras</a>
+		<a class="p-2 text-light text-decoration-none text-danger-emphasis bg-dark-subtle" href="login.html">Sair</a>
+	</div>
+
+    <div class="container mt-3">
+
+        <h1 class="text-center border-bottom border-danger mb-4">Cadastrar alerta</h1>
+
+        <form action="#" method="post" id="forms">
+            <fieldset>
+                <div class="row mt-3" id="cadastroAlerta">
+                    <div class="col-md-8" id="descricaoAlerta">
+                        <label for="descricao" class="form-label">Descrição do Produto</label>
+                        <input type="text" class="form-control" id="descricao" name="descricao" required>
+                    </div>
+                    <div class="col-md-4" id="valorAlerta">
+                        <label for="valor" class="form-label">Valor desejado</label>
+                        <input type="number" class="form-control" id="valor" name="valor" required>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-success m-1" type="button" onclick="salvar()">Alertar</button>
+                        <button class="btn btn-success m-1" type="button" onclick="comprar()">Comprar</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+
+        <h1 class="text-center border-bottom border-danger mb-4">Itens diponíveis</h1>
+
+        <div class="row mt-5">
+            <table id="tabela" class="table mt-3">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.mask.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/compras.js"></script>
+</body>
+
+</html>
