@@ -1,0 +1,49 @@
+<html>
+
+<head>
+	<title>Login</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center border-bottom border-danger mb-4">Autenticação</h1>
+
+        <main>
+            <form action="#" id="forms" method="post">
+                <fieldset>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <label class="form-label" for="login">Login</label>
+                            <input class="form-control" id="login" name="login" type="text" required>
+                        </div>
+                    </div>
+    
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <label class="form-label" for="senha">Senha</label>
+                            <input class="form-control" id="senha" name="senha" type="text" required>
+                        </div>
+                    </div>
+    
+                    <div class="row mt-3">
+                        <div class="col-12 d-flex justify-content-end">
+                            <button class="btn btn-success" type="button" onclick="autenticar()">Logar</button>
+                        </div>					
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/jquery.mask.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>
