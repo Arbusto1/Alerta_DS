@@ -36,6 +36,8 @@ async function autenticar() {
 
             if(usuario.id > 0) {
                 localStorage.setItem('contas', JSON.stringify(usuario));
+                localStorage.removeItem("notificacao");
+                localStorage.removeItem("minhasCompras");
                 window.location.href = "alerta.html";
             } else {
                 alert("Usuário ou senha inválidos.");
